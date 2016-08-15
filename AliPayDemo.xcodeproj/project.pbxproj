@@ -15,6 +15,30 @@
 		18603C101D61A1E100DBBEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18603C0E1D61A1E100DBBEBB /* LaunchScreen.storyboard */; };
 		18603C1B1D61A1E100DBBEBB /* AliPayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C1A1D61A1E100DBBEBB /* AliPayDemoTests.m */; };
 		18603C261D61A1E100DBBEBB /* AliPayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C251D61A1E100DBBEBB /* AliPayDemoUITests.m */; };
+		18603C371D61A3A900DBBEBB /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18603C341D61A3A900DBBEBB /* AlipaySDK.bundle */; };
+		18603C381D61A3A900DBBEBB /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C361D61A3A900DBBEBB /* Order.m */; };
+		18603C961D61A3E500DBBEBB /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C861D61A3E500DBBEBB /* base64.m */; };
+		18603C971D61A3E500DBBEBB /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C891D61A3E500DBBEBB /* DataSigner.m */; };
+		18603C981D61A3E500DBBEBB /* DataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C8B1D61A3E500DBBEBB /* DataVerifier.m */; };
+		18603C991D61A3E500DBBEBB /* MD5DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C8D1D61A3E500DBBEBB /* MD5DataSigner.m */; };
+		18603C9A1D61A3E500DBBEBB /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C8F1D61A3E500DBBEBB /* NSDataEx.m */; };
+		18603C9B1D61A3E500DBBEBB /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C911D61A3E500DBBEBB /* openssl_wrapper.m */; };
+		18603C9C1D61A3E500DBBEBB /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C931D61A3E500DBBEBB /* RSADataSigner.m */; };
+		18603C9D1D61A3E500DBBEBB /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 18603C951D61A3E500DBBEBB /* RSADataVerifier.m */; };
+		18603CA11D61A43700DBBEBB /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CA01D61A43700DBBEBB /* AlipaySDK.framework */; };
+		18603CA31D61A44100DBBEBB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CA21D61A44100DBBEBB /* CoreMotion.framework */; };
+		18603CA51D61A44800DBBEBB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CA41D61A44800DBBEBB /* CFNetwork.framework */; };
+		18603CA71D61A45200DBBEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CA61D61A45200DBBEBB /* Foundation.framework */; };
+		18603CA91D61A45A00DBBEBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CA81D61A45A00DBBEBB /* UIKit.framework */; };
+		18603CAB1D61A46500DBBEBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CAA1D61A46500DBBEBB /* CoreGraphics.framework */; };
+		18603CAD1D61A47300DBBEBB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CAC1D61A47300DBBEBB /* CoreText.framework */; };
+		18603CAF1D61A48500DBBEBB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CAE1D61A48500DBBEBB /* QuartzCore.framework */; };
+		18603CB11D61A48D00DBBEBB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CB01D61A48D00DBBEBB /* CoreTelephony.framework */; };
+		18603CB31D61A49400DBBEBB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CB21D61A49400DBBEBB /* SystemConfiguration.framework */; };
+		18603CB51D61A49B00DBBEBB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CB41D61A49B00DBBEBB /* libz.tbd */; };
+		18603CB71D61A4A900DBBEBB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CB61D61A4A900DBBEBB /* libc++.tbd */; };
+		18603CB91D61A4E300DBBEBB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CB81D61A4E300DBBEBB /* libssl.a */; };
+		18603CBB1D61A4F100DBBEBB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18603CBA1D61A4F100DBBEBB /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +75,116 @@
 		18603C211D61A1E100DBBEBB /* AliPayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliPayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18603C251D61A1E100DBBEBB /* AliPayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayDemoUITests.m; sourceTree = "<group>"; };
 		18603C271D61A1E100DBBEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18603C341D61A3A900DBBEBB /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = AliPaySDK/AlipaySDK.bundle; sourceTree = SOURCE_ROOT; };
+		18603C351D61A3A900DBBEBB /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Order.h; path = AliPaySDK/Order.h; sourceTree = SOURCE_ROOT; };
+		18603C361D61A3A900DBBEBB /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Order.m; path = AliPaySDK/Order.m; sourceTree = SOURCE_ROOT; };
+		18603C391D61A3BA00DBBEBB /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aes.h; path = AliPaySDK/openssl/aes.h; sourceTree = SOURCE_ROOT; };
+		18603C3A1D61A3BA00DBBEBB /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = AliPaySDK/openssl/asn1_mac.h; sourceTree = SOURCE_ROOT; };
+		18603C3B1D61A3BA00DBBEBB /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = AliPaySDK/openssl/asn1.h; sourceTree = SOURCE_ROOT; };
+		18603C3C1D61A3BA00DBBEBB /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = AliPaySDK/openssl/asn1t.h; sourceTree = SOURCE_ROOT; };
+		18603C3D1D61A3BA00DBBEBB /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bio.h; path = AliPaySDK/openssl/bio.h; sourceTree = SOURCE_ROOT; };
+		18603C3E1D61A3BA00DBBEBB /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = AliPaySDK/openssl/blowfish.h; sourceTree = SOURCE_ROOT; };
+		18603C3F1D61A3BA00DBBEBB /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bn.h; path = AliPaySDK/openssl/bn.h; sourceTree = SOURCE_ROOT; };
+		18603C401D61A3BA00DBBEBB /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = AliPaySDK/openssl/buffer.h; sourceTree = SOURCE_ROOT; };
+		18603C411D61A3BA00DBBEBB /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = AliPaySDK/openssl/camellia.h; sourceTree = SOURCE_ROOT; };
+		18603C421D61A3BA00DBBEBB /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cast.h; path = AliPaySDK/openssl/cast.h; sourceTree = SOURCE_ROOT; };
+		18603C431D61A3BA00DBBEBB /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = AliPaySDK/openssl/cmac.h; sourceTree = SOURCE_ROOT; };
+		18603C441D61A3BA00DBBEBB /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cms.h; path = AliPaySDK/openssl/cms.h; sourceTree = SOURCE_ROOT; };
+		18603C451D61A3BA00DBBEBB /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comp.h; path = AliPaySDK/openssl/comp.h; sourceTree = SOURCE_ROOT; };
+		18603C461D61A3BA00DBBEBB /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = AliPaySDK/openssl/conf_api.h; sourceTree = SOURCE_ROOT; };
+		18603C471D61A3BA00DBBEBB /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf.h; path = AliPaySDK/openssl/conf.h; sourceTree = SOURCE_ROOT; };
+		18603C481D61A3BA00DBBEBB /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = AliPaySDK/openssl/crypto.h; sourceTree = SOURCE_ROOT; };
+		18603C491D61A3BA00DBBEBB /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = AliPaySDK/openssl/des_old.h; sourceTree = SOURCE_ROOT; };
+		18603C4A1D61A3BA00DBBEBB /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des.h; path = AliPaySDK/openssl/des.h; sourceTree = SOURCE_ROOT; };
+		18603C4B1D61A3BA00DBBEBB /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dh.h; path = AliPaySDK/openssl/dh.h; sourceTree = SOURCE_ROOT; };
+		18603C4C1D61A3BA00DBBEBB /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = AliPaySDK/openssl/dsa.h; sourceTree = SOURCE_ROOT; };
+		18603C4D1D61A3BA00DBBEBB /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dso.h; path = AliPaySDK/openssl/dso.h; sourceTree = SOURCE_ROOT; };
+		18603C4E1D61A3BA00DBBEBB /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = AliPaySDK/openssl/dtls1.h; sourceTree = SOURCE_ROOT; };
+		18603C4F1D61A3BA00DBBEBB /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = AliPaySDK/openssl/e_os2.h; sourceTree = SOURCE_ROOT; };
+		18603C501D61A3BA00DBBEBB /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = AliPaySDK/openssl/ebcdic.h; sourceTree = SOURCE_ROOT; };
+		18603C511D61A3BA00DBBEBB /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ec.h; path = AliPaySDK/openssl/ec.h; sourceTree = SOURCE_ROOT; };
+		18603C521D61A3BA00DBBEBB /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = AliPaySDK/openssl/ecdh.h; sourceTree = SOURCE_ROOT; };
+		18603C531D61A3BA00DBBEBB /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = AliPaySDK/openssl/ecdsa.h; sourceTree = SOURCE_ROOT; };
+		18603C541D61A3BA00DBBEBB /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = engine.h; path = AliPaySDK/openssl/engine.h; sourceTree = SOURCE_ROOT; };
+		18603C551D61A3BA00DBBEBB /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = err.h; path = AliPaySDK/openssl/err.h; sourceTree = SOURCE_ROOT; };
+		18603C561D61A3BA00DBBEBB /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = evp.h; path = AliPaySDK/openssl/evp.h; sourceTree = SOURCE_ROOT; };
+		18603C571D61A3BA00DBBEBB /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = AliPaySDK/openssl/hmac.h; sourceTree = SOURCE_ROOT; };
+		18603C581D61A3BA00DBBEBB /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = idea.h; path = AliPaySDK/openssl/idea.h; sourceTree = SOURCE_ROOT; };
+		18603C591D61A3BA00DBBEBB /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = AliPaySDK/openssl/krb5_asn.h; sourceTree = SOURCE_ROOT; };
+		18603C5A1D61A3BA00DBBEBB /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = AliPaySDK/openssl/kssl.h; sourceTree = SOURCE_ROOT; };
+		18603C5B1D61A3BA00DBBEBB /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = AliPaySDK/openssl/lhash.h; sourceTree = SOURCE_ROOT; };
+		18603C5C1D61A3BA00DBBEBB /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md4.h; path = AliPaySDK/openssl/md4.h; sourceTree = SOURCE_ROOT; };
+		18603C5D1D61A3BA00DBBEBB /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = AliPaySDK/openssl/md5.h; sourceTree = SOURCE_ROOT; };
+		18603C5E1D61A3BA00DBBEBB /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = AliPaySDK/openssl/mdc2.h; sourceTree = SOURCE_ROOT; };
+		18603C5F1D61A3BA00DBBEBB /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modes.h; path = AliPaySDK/openssl/modes.h; sourceTree = SOURCE_ROOT; };
+		18603C601D61A3BA00DBBEBB /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = AliPaySDK/openssl/obj_mac.h; sourceTree = SOURCE_ROOT; };
+		18603C611D61A3BA00DBBEBB /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objects.h; path = AliPaySDK/openssl/objects.h; sourceTree = SOURCE_ROOT; };
+		18603C621D61A3BA00DBBEBB /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = AliPaySDK/openssl/ocsp.h; sourceTree = SOURCE_ROOT; };
+		18603C631D61A3BA00DBBEBB /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = AliPaySDK/openssl/opensslconf.h; sourceTree = SOURCE_ROOT; };
+		18603C641D61A3BA00DBBEBB /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = AliPaySDK/openssl/opensslv.h; sourceTree = SOURCE_ROOT; };
+		18603C651D61A3BA00DBBEBB /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = AliPaySDK/openssl/ossl_typ.h; sourceTree = SOURCE_ROOT; };
+		18603C661D61A3BA00DBBEBB /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem.h; path = AliPaySDK/openssl/pem.h; sourceTree = SOURCE_ROOT; };
+		18603C671D61A3BA00DBBEBB /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = AliPaySDK/openssl/pem2.h; sourceTree = SOURCE_ROOT; };
+		18603C681D61A3BA00DBBEBB /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = AliPaySDK/openssl/pkcs7.h; sourceTree = SOURCE_ROOT; };
+		18603C691D61A3BA00DBBEBB /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = AliPaySDK/openssl/pkcs12.h; sourceTree = SOURCE_ROOT; };
+		18603C6A1D61A3BA00DBBEBB /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = AliPaySDK/openssl/pqueue.h; sourceTree = SOURCE_ROOT; };
+		18603C6B1D61A3BA00DBBEBB /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rand.h; path = AliPaySDK/openssl/rand.h; sourceTree = SOURCE_ROOT; };
+		18603C6C1D61A3BA00DBBEBB /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = AliPaySDK/openssl/rc2.h; sourceTree = SOURCE_ROOT; };
+		18603C6D1D61A3BA00DBBEBB /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = AliPaySDK/openssl/rc4.h; sourceTree = SOURCE_ROOT; };
+		18603C6E1D61A3BA00DBBEBB /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = AliPaySDK/openssl/ripemd.h; sourceTree = SOURCE_ROOT; };
+		18603C6F1D61A3BA00DBBEBB /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = AliPaySDK/openssl/rsa.h; sourceTree = SOURCE_ROOT; };
+		18603C701D61A3BA00DBBEBB /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = AliPaySDK/openssl/safestack.h; sourceTree = SOURCE_ROOT; };
+		18603C711D61A3BA00DBBEBB /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = seed.h; path = AliPaySDK/openssl/seed.h; sourceTree = SOURCE_ROOT; };
+		18603C721D61A3BA00DBBEBB /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha.h; path = AliPaySDK/openssl/sha.h; sourceTree = SOURCE_ROOT; };
+		18603C731D61A3BA00DBBEBB /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srp.h; path = AliPaySDK/openssl/srp.h; sourceTree = SOURCE_ROOT; };
+		18603C741D61A3BA00DBBEBB /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = AliPaySDK/openssl/srtp.h; sourceTree = SOURCE_ROOT; };
+		18603C751D61A3BA00DBBEBB /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = AliPaySDK/openssl/ssl.h; sourceTree = SOURCE_ROOT; };
+		18603C761D61A3BA00DBBEBB /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = AliPaySDK/openssl/ssl2.h; sourceTree = SOURCE_ROOT; };
+		18603C771D61A3BA00DBBEBB /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = AliPaySDK/openssl/ssl3.h; sourceTree = SOURCE_ROOT; };
+		18603C781D61A3BA00DBBEBB /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = AliPaySDK/openssl/ssl23.h; sourceTree = SOURCE_ROOT; };
+		18603C791D61A3BA00DBBEBB /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = AliPaySDK/openssl/stack.h; sourceTree = SOURCE_ROOT; };
+		18603C7A1D61A3BA00DBBEBB /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = AliPaySDK/openssl/symhacks.h; sourceTree = SOURCE_ROOT; };
+		18603C7B1D61A3BA00DBBEBB /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = AliPaySDK/openssl/tls1.h; sourceTree = SOURCE_ROOT; };
+		18603C7C1D61A3BA00DBBEBB /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ts.h; path = AliPaySDK/openssl/ts.h; sourceTree = SOURCE_ROOT; };
+		18603C7D1D61A3BA00DBBEBB /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = AliPaySDK/openssl/txt_db.h; sourceTree = SOURCE_ROOT; };
+		18603C7E1D61A3BA00DBBEBB /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = AliPaySDK/openssl/ui_compat.h; sourceTree = SOURCE_ROOT; };
+		18603C7F1D61A3BA00DBBEBB /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui.h; path = AliPaySDK/openssl/ui.h; sourceTree = SOURCE_ROOT; };
+		18603C801D61A3BA00DBBEBB /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = AliPaySDK/openssl/whrlpool.h; sourceTree = SOURCE_ROOT; };
+		18603C811D61A3BA00DBBEBB /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = AliPaySDK/openssl/x509_vfy.h; sourceTree = SOURCE_ROOT; };
+		18603C821D61A3BA00DBBEBB /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509.h; path = AliPaySDK/openssl/x509.h; sourceTree = SOURCE_ROOT; };
+		18603C831D61A3BA00DBBEBB /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = AliPaySDK/openssl/x509v3.h; sourceTree = SOURCE_ROOT; };
+		18603C851D61A3E500DBBEBB /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = AliPaySDK/Util/base64.h; sourceTree = SOURCE_ROOT; };
+		18603C861D61A3E500DBBEBB /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = base64.m; path = AliPaySDK/Util/base64.m; sourceTree = SOURCE_ROOT; };
+		18603C871D61A3E500DBBEBB /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = AliPaySDK/Util/config.h; sourceTree = SOURCE_ROOT; };
+		18603C881D61A3E500DBBEBB /* DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSigner.h; path = AliPaySDK/Util/DataSigner.h; sourceTree = SOURCE_ROOT; };
+		18603C891D61A3E500DBBEBB /* DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataSigner.m; path = AliPaySDK/Util/DataSigner.m; sourceTree = SOURCE_ROOT; };
+		18603C8A1D61A3E500DBBEBB /* DataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataVerifier.h; path = AliPaySDK/Util/DataVerifier.h; sourceTree = SOURCE_ROOT; };
+		18603C8B1D61A3E500DBBEBB /* DataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataVerifier.m; path = AliPaySDK/Util/DataVerifier.m; sourceTree = SOURCE_ROOT; };
+		18603C8C1D61A3E500DBBEBB /* MD5DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MD5DataSigner.h; path = AliPaySDK/Util/MD5DataSigner.h; sourceTree = SOURCE_ROOT; };
+		18603C8D1D61A3E500DBBEBB /* MD5DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MD5DataSigner.m; path = AliPaySDK/Util/MD5DataSigner.m; sourceTree = SOURCE_ROOT; };
+		18603C8E1D61A3E500DBBEBB /* NSDataEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataEx.h; path = AliPaySDK/Util/NSDataEx.h; sourceTree = SOURCE_ROOT; };
+		18603C8F1D61A3E500DBBEBB /* NSDataEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataEx.m; path = AliPaySDK/Util/NSDataEx.m; sourceTree = SOURCE_ROOT; };
+		18603C901D61A3E500DBBEBB /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openssl_wrapper.h; path = AliPaySDK/Util/openssl_wrapper.h; sourceTree = SOURCE_ROOT; };
+		18603C911D61A3E500DBBEBB /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = openssl_wrapper.m; path = AliPaySDK/Util/openssl_wrapper.m; sourceTree = SOURCE_ROOT; };
+		18603C921D61A3E500DBBEBB /* RSADataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSADataSigner.h; path = AliPaySDK/Util/RSADataSigner.h; sourceTree = SOURCE_ROOT; };
+		18603C931D61A3E500DBBEBB /* RSADataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSADataSigner.m; path = AliPaySDK/Util/RSADataSigner.m; sourceTree = SOURCE_ROOT; };
+		18603C941D61A3E500DBBEBB /* RSADataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSADataVerifier.h; path = AliPaySDK/Util/RSADataVerifier.h; sourceTree = SOURCE_ROOT; };
+		18603C951D61A3E500DBBEBB /* RSADataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSADataVerifier.m; path = AliPaySDK/Util/RSADataVerifier.m; sourceTree = SOURCE_ROOT; };
+		18603CA01D61A43700DBBEBB /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = AliPaySDK/AlipaySDK.framework; sourceTree = "<group>"; };
+		18603CA21D61A44100DBBEBB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		18603CA41D61A44800DBBEBB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18603CA61D61A45200DBBEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18603CA81D61A45A00DBBEBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18603CAA1D61A46500DBBEBB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18603CAC1D61A47300DBBEBB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		18603CAE1D61A48500DBBEBB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18603CB01D61A48D00DBBEBB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		18603CB21D61A49400DBBEBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18603CB41D61A49B00DBBEBB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		18603CB61D61A4A900DBBEBB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		18603CB81D61A4E300DBBEBB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = AliPaySDK/libssl.a; sourceTree = "<group>"; };
+		18603CBA1D61A4F100DBBEBB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = AliPaySDK/libcrypto.a; sourceTree = "<group>"; };
+		18603CBC1D61A6AD00DBBEBB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +192,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18603CBB1D61A4F100DBBEBB /* libcrypto.a in Frameworks */,
+				18603CB91D61A4E300DBBEBB /* libssl.a in Frameworks */,
+				18603CB71D61A4A900DBBEBB /* libc++.tbd in Frameworks */,
+				18603CB51D61A49B00DBBEBB /* libz.tbd in Frameworks */,
+				18603CB31D61A49400DBBEBB /* SystemConfiguration.framework in Frameworks */,
+				18603CB11D61A48D00DBBEBB /* CoreTelephony.framework in Frameworks */,
+				18603CAF1D61A48500DBBEBB /* QuartzCore.framework in Frameworks */,
+				18603CAD1D61A47300DBBEBB /* CoreText.framework in Frameworks */,
+				18603CAB1D61A46500DBBEBB /* CoreGraphics.framework in Frameworks */,
+				18603CA91D61A45A00DBBEBB /* UIKit.framework in Frameworks */,
+				18603CA71D61A45200DBBEBB /* Foundation.framework in Frameworks */,
+				18603CA51D61A44800DBBEBB /* CFNetwork.framework in Frameworks */,
+				18603CA31D61A44100DBBEBB /* CoreMotion.framework in Frameworks */,
+				18603CA11D61A43700DBBEBB /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +233,7 @@
 				18603C191D61A1E100DBBEBB /* AliPayDemoTests */,
 				18603C241D61A1E100DBBEBB /* AliPayDemoUITests */,
 				18603BFE1D61A1E100DBBEBB /* Products */,
+				18603C331D61A32E00DBBEBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +250,7 @@
 		18603BFF1D61A1E100DBBEBB /* AliPayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18603C9F1D61A3FE00DBBEBB /* AliPaySDK */,
 				18603C031D61A1E100DBBEBB /* AppDelegate.h */,
 				18603C041D61A1E100DBBEBB /* AppDelegate.m */,
 				18603C061D61A1E100DBBEBB /* ViewController.h */,
@@ -118,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				18603C011D61A1E100DBBEBB /* main.m */,
+				18603CBC1D61A6AD00DBBEBB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +289,145 @@
 				18603C271D61A1E100DBBEBB /* Info.plist */,
 			);
 			path = AliPayDemoUITests;
+			sourceTree = "<group>";
+		};
+		18603C331D61A32E00DBBEBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18603CBA1D61A4F100DBBEBB /* libcrypto.a */,
+				18603CB81D61A4E300DBBEBB /* libssl.a */,
+				18603CB61D61A4A900DBBEBB /* libc++.tbd */,
+				18603CB41D61A49B00DBBEBB /* libz.tbd */,
+				18603CB21D61A49400DBBEBB /* SystemConfiguration.framework */,
+				18603CB01D61A48D00DBBEBB /* CoreTelephony.framework */,
+				18603CAE1D61A48500DBBEBB /* QuartzCore.framework */,
+				18603CAC1D61A47300DBBEBB /* CoreText.framework */,
+				18603CAA1D61A46500DBBEBB /* CoreGraphics.framework */,
+				18603CA81D61A45A00DBBEBB /* UIKit.framework */,
+				18603CA61D61A45200DBBEBB /* Foundation.framework */,
+				18603CA41D61A44800DBBEBB /* CFNetwork.framework */,
+				18603CA21D61A44100DBBEBB /* CoreMotion.framework */,
+				18603CA01D61A43700DBBEBB /* AlipaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18603C841D61A3C500DBBEBB /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				18603C391D61A3BA00DBBEBB /* aes.h */,
+				18603C3A1D61A3BA00DBBEBB /* asn1_mac.h */,
+				18603C3B1D61A3BA00DBBEBB /* asn1.h */,
+				18603C3C1D61A3BA00DBBEBB /* asn1t.h */,
+				18603C3D1D61A3BA00DBBEBB /* bio.h */,
+				18603C3E1D61A3BA00DBBEBB /* blowfish.h */,
+				18603C3F1D61A3BA00DBBEBB /* bn.h */,
+				18603C401D61A3BA00DBBEBB /* buffer.h */,
+				18603C411D61A3BA00DBBEBB /* camellia.h */,
+				18603C421D61A3BA00DBBEBB /* cast.h */,
+				18603C431D61A3BA00DBBEBB /* cmac.h */,
+				18603C441D61A3BA00DBBEBB /* cms.h */,
+				18603C451D61A3BA00DBBEBB /* comp.h */,
+				18603C461D61A3BA00DBBEBB /* conf_api.h */,
+				18603C471D61A3BA00DBBEBB /* conf.h */,
+				18603C481D61A3BA00DBBEBB /* crypto.h */,
+				18603C491D61A3BA00DBBEBB /* des_old.h */,
+				18603C4A1D61A3BA00DBBEBB /* des.h */,
+				18603C4B1D61A3BA00DBBEBB /* dh.h */,
+				18603C4C1D61A3BA00DBBEBB /* dsa.h */,
+				18603C4D1D61A3BA00DBBEBB /* dso.h */,
+				18603C4E1D61A3BA00DBBEBB /* dtls1.h */,
+				18603C4F1D61A3BA00DBBEBB /* e_os2.h */,
+				18603C501D61A3BA00DBBEBB /* ebcdic.h */,
+				18603C511D61A3BA00DBBEBB /* ec.h */,
+				18603C521D61A3BA00DBBEBB /* ecdh.h */,
+				18603C531D61A3BA00DBBEBB /* ecdsa.h */,
+				18603C541D61A3BA00DBBEBB /* engine.h */,
+				18603C551D61A3BA00DBBEBB /* err.h */,
+				18603C561D61A3BA00DBBEBB /* evp.h */,
+				18603C571D61A3BA00DBBEBB /* hmac.h */,
+				18603C581D61A3BA00DBBEBB /* idea.h */,
+				18603C591D61A3BA00DBBEBB /* krb5_asn.h */,
+				18603C5A1D61A3BA00DBBEBB /* kssl.h */,
+				18603C5B1D61A3BA00DBBEBB /* lhash.h */,
+				18603C5C1D61A3BA00DBBEBB /* md4.h */,
+				18603C5D1D61A3BA00DBBEBB /* md5.h */,
+				18603C5E1D61A3BA00DBBEBB /* mdc2.h */,
+				18603C5F1D61A3BA00DBBEBB /* modes.h */,
+				18603C601D61A3BA00DBBEBB /* obj_mac.h */,
+				18603C611D61A3BA00DBBEBB /* objects.h */,
+				18603C621D61A3BA00DBBEBB /* ocsp.h */,
+				18603C631D61A3BA00DBBEBB /* opensslconf.h */,
+				18603C641D61A3BA00DBBEBB /* opensslv.h */,
+				18603C651D61A3BA00DBBEBB /* ossl_typ.h */,
+				18603C661D61A3BA00DBBEBB /* pem.h */,
+				18603C671D61A3BA00DBBEBB /* pem2.h */,
+				18603C681D61A3BA00DBBEBB /* pkcs7.h */,
+				18603C691D61A3BA00DBBEBB /* pkcs12.h */,
+				18603C6A1D61A3BA00DBBEBB /* pqueue.h */,
+				18603C6B1D61A3BA00DBBEBB /* rand.h */,
+				18603C6C1D61A3BA00DBBEBB /* rc2.h */,
+				18603C6D1D61A3BA00DBBEBB /* rc4.h */,
+				18603C6E1D61A3BA00DBBEBB /* ripemd.h */,
+				18603C6F1D61A3BA00DBBEBB /* rsa.h */,
+				18603C701D61A3BA00DBBEBB /* safestack.h */,
+				18603C711D61A3BA00DBBEBB /* seed.h */,
+				18603C721D61A3BA00DBBEBB /* sha.h */,
+				18603C731D61A3BA00DBBEBB /* srp.h */,
+				18603C741D61A3BA00DBBEBB /* srtp.h */,
+				18603C751D61A3BA00DBBEBB /* ssl.h */,
+				18603C761D61A3BA00DBBEBB /* ssl2.h */,
+				18603C771D61A3BA00DBBEBB /* ssl3.h */,
+				18603C781D61A3BA00DBBEBB /* ssl23.h */,
+				18603C791D61A3BA00DBBEBB /* stack.h */,
+				18603C7A1D61A3BA00DBBEBB /* symhacks.h */,
+				18603C7B1D61A3BA00DBBEBB /* tls1.h */,
+				18603C7C1D61A3BA00DBBEBB /* ts.h */,
+				18603C7D1D61A3BA00DBBEBB /* txt_db.h */,
+				18603C7E1D61A3BA00DBBEBB /* ui_compat.h */,
+				18603C7F1D61A3BA00DBBEBB /* ui.h */,
+				18603C801D61A3BA00DBBEBB /* whrlpool.h */,
+				18603C811D61A3BA00DBBEBB /* x509_vfy.h */,
+				18603C821D61A3BA00DBBEBB /* x509.h */,
+				18603C831D61A3BA00DBBEBB /* x509v3.h */,
+			);
+			name = openssl;
+			sourceTree = "<group>";
+		};
+		18603C9E1D61A3EA00DBBEBB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				18603C851D61A3E500DBBEBB /* base64.h */,
+				18603C861D61A3E500DBBEBB /* base64.m */,
+				18603C871D61A3E500DBBEBB /* config.h */,
+				18603C881D61A3E500DBBEBB /* DataSigner.h */,
+				18603C891D61A3E500DBBEBB /* DataSigner.m */,
+				18603C8A1D61A3E500DBBEBB /* DataVerifier.h */,
+				18603C8B1D61A3E500DBBEBB /* DataVerifier.m */,
+				18603C8C1D61A3E500DBBEBB /* MD5DataSigner.h */,
+				18603C8D1D61A3E500DBBEBB /* MD5DataSigner.m */,
+				18603C8E1D61A3E500DBBEBB /* NSDataEx.h */,
+				18603C8F1D61A3E500DBBEBB /* NSDataEx.m */,
+				18603C901D61A3E500DBBEBB /* openssl_wrapper.h */,
+				18603C911D61A3E500DBBEBB /* openssl_wrapper.m */,
+				18603C921D61A3E500DBBEBB /* RSADataSigner.h */,
+				18603C931D61A3E500DBBEBB /* RSADataSigner.m */,
+				18603C941D61A3E500DBBEBB /* RSADataVerifier.h */,
+				18603C951D61A3E500DBBEBB /* RSADataVerifier.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		18603C9F1D61A3FE00DBBEBB /* AliPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				18603C9E1D61A3EA00DBBEBB /* Util */,
+				18603C841D61A3C500DBBEBB /* openssl */,
+				18603C341D61A3A900DBBEBB /* AlipaySDK.bundle */,
+				18603C351D61A3A900DBBEBB /* Order.h */,
+				18603C361D61A3A900DBBEBB /* Order.m */,
+			);
+			name = AliPaySDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +538,7 @@
 			files = (
 				18603C101D61A1E100DBBEBB /* LaunchScreen.storyboard in Resources */,
 				18603C0D1D61A1E100DBBEBB /* Assets.xcassets in Resources */,
+				18603C371D61A3A900DBBEBB /* AlipaySDK.bundle in Resources */,
 				18603C0B1D61A1E100DBBEBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +564,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18603C961D61A3E500DBBEBB /* base64.m in Sources */,
 				18603C081D61A1E100DBBEBB /* ViewController.m in Sources */,
+				18603C9A1D61A3E500DBBEBB /* NSDataEx.m in Sources */,
+				18603C991D61A3E500DBBEBB /* MD5DataSigner.m in Sources */,
+				18603C9D1D61A3E500DBBEBB /* RSADataVerifier.m in Sources */,
 				18603C051D61A1E100DBBEBB /* AppDelegate.m in Sources */,
+				18603C971D61A3E500DBBEBB /* DataSigner.m in Sources */,
+				18603C9C1D61A3E500DBBEBB /* RSADataSigner.m in Sources */,
+				18603C9B1D61A3E500DBBEBB /* openssl_wrapper.m in Sources */,
+				18603C381D61A3A900DBBEBB /* Order.m in Sources */,
 				18603C021D61A1E100DBBEBB /* main.m in Sources */,
+				18603C981D61A3E500DBBEBB /* DataVerifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,8 +718,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliPaySDK",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AliPayDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AliPayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliPaySDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.allApp.AliPayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -429,8 +738,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliPaySDK",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AliPayDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AliPayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliPaySDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.allApp.AliPayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <AlipaySDK/AlipaySDK.h>
+#import "Order.h"
+#import "DataSigner.h"
 
 @interface ViewController ()
 
