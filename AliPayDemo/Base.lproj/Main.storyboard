@@ -18,40 +18,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-ty-D7R">
-                                <rect key="frame" x="0.0" y="104" width="320" height="402"/>
+                                <rect key="frame" x="0.0" y="104" width="320" height="379"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方demo：客户端生成订单且签名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDe-m6-I7l">
-                                <rect key="frame" x="28" y="75" width="265" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方demo:客户端生成订单且签名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDe-m6-I7l">
+                                <rect key="frame" x="25" y="75" width="270" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="265" id="OeR-VJ-rHx"/>
+                                    <constraint firstAttribute="width" constant="270" id="OeR-VJ-rHx"/>
                                     <constraint firstAttribute="height" constant="21" id="SyE-h0-JJh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务器生成订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gK-PI-Z3Z">
-                                <rect key="frame" x="101" y="514" width="119" height="21"/>
+                                <rect key="frame" x="95" y="491" width="130" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="119" id="M7K-KG-oh1"/>
+                                    <constraint firstAttribute="width" constant="130" id="M7K-KG-oh1"/>
                                     <constraint firstAttribute="height" constant="21" id="m3f-0L-ilD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGi-Bi-6wl">
-                                <rect key="frame" x="126" y="535" width="68" height="33"/>
-                                <color key="backgroundColor" red="0.9861857275230107" green="1" blue="0.95588281835331956" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="126" y="520" width="68" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="DAf-vF-dIO"/>
                                     <constraint firstAttribute="height" constant="33" id="cQB-Xv-cI3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="支付订单">
-                                    <color key="titleColor" red="1" green="0.34822841751256028" blue="0.18428182966358719" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.3482284175" blue="0.18428182970000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="payButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFC-Gg-aQz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -60,16 +62,19 @@
                             <constraint firstItem="4gK-PI-Z3Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y4m-yv-cOv"/>
                             <constraint firstItem="x8I-ty-D7R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZtI-Ok-m45"/>
                             <constraint firstItem="4gK-PI-Z3Z" firstAttribute="top" secondItem="x8I-ty-D7R" secondAttribute="bottom" constant="8" id="en3-Hc-24n"/>
-                            <constraint firstItem="IGi-Bi-6wl" firstAttribute="top" secondItem="4gK-PI-Z3Z" secondAttribute="bottom" id="gqk-Zp-uc5"/>
+                            <constraint firstItem="IGi-Bi-6wl" firstAttribute="top" secondItem="4gK-PI-Z3Z" secondAttribute="bottom" constant="8" id="gqk-Zp-uc5"/>
                             <constraint firstItem="IGi-Bi-6wl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hIg-rl-9ac"/>
                             <constraint firstItem="x8I-ty-D7R" firstAttribute="top" secondItem="uDe-m6-I7l" secondAttribute="bottom" constant="8" id="hv2-ib-hGx"/>
                             <constraint firstItem="uDe-m6-I7l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="noJ-Mn-PdY"/>
                             <constraint firstItem="uDe-m6-I7l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rE8-XF-dZ1"/>
-                            <constraint firstAttribute="bottom" secondItem="x8I-ty-D7R" secondAttribute="bottom" constant="62" id="yFq-YN-Xsb"/>
+                            <constraint firstAttribute="bottom" secondItem="x8I-ty-D7R" secondAttribute="bottom" constant="85" id="yFq-YN-Xsb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PCa-5x-jMd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="productTableView" destination="x8I-ty-D7R" id="IWp-wm-AD7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
