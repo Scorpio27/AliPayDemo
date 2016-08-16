@@ -18,6 +18,7 @@
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *productTableView;
+
 @property(nonatomic, strong)NSMutableArray *productList;
 
 @end
@@ -97,6 +98,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIDentifier];
     }
+    
     Product *product = _productList[indexPath.row];
     cell.textLabel.text = product.body;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"一口价:%.2f",product.price];
