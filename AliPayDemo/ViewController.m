@@ -21,6 +21,8 @@
 
 @property(nonatomic, strong)NSMutableArray *productList;
 
+@property (weak, nonatomic) IBOutlet UIButton *payButton;
+
 @end
 
 @implementation ViewController
@@ -37,6 +39,11 @@
     _productTableView.dataSource = self;
     _productTableView.rowHeight = 55;
 //    _productTableView.bounces = NO;
+    
+    _payButton.backgroundColor = [UIColor colorWithRed:81.0f/255.0f green:141.0f/255.0f blue:229.0f/255.0f alpha:1.0f];
+    _payButton.tintColor = [UIColor whiteColor];
+    _payButton.layer.masksToBounds = YES;
+    _payButton.layer.cornerRadius = 4.0f;
     
     [self generateData];
     
@@ -115,47 +122,33 @@
     //点击获取prodcut实例并初始化订单信息
     Product *product = _productList[indexPath.row];
     
-    /**
-     *  商户的唯一的parnter和seller。
-     *  签约后，支付宝会为每个商户分配一个唯一的 parnter 和 seller。
+    /*
+     *重要说明
+     *这里只是为了方便直接向商户展示支付宝的整个支付流程,所以Demo中加签过程直接放在客户端完成
+     *真实App里,privateKey等数据严禁放在客户端,加签过程务必要放在服务端完成
+     *防止商户私密数据泄露,造成不必要的资金损失,及面临各种安全风险
      */
-
-    /*=======================需要填写商户app申请的===================================*/
-    
-    NSString *appID = @"2088101568358171";
-    NSString *seller = @"2088101568358171";
-    NSString *privateKey = @"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMspRqs3boEbxaqz8ZR/VUAm0Aw+5klaQzTtYEMKHBQXZTePOdPhDiaThtQutfVrlDh2k8dukf+yCcVeIcOJRqukDW9D+rg7xVdNlWGHuUNaMaiZbPg3XsVDNG+MP8ZV/vyYeFFi8ypOkCt/8/GDxAaWbOg/oGdfoiAJJbjswZ/vAgMBAAECgYA7AFTGusV7923ToojBYK2IgP0g4U+N9AnaoCm5roDzEMxTc2QO9ahfaa7ZhmtPyBt2vnEylRkPkkwmJq1VlVORVo5NhGHqW0e1YtuCRWZGS6x/6EWdKn2nUgNSiUAiciWstMNfi+MWt2U7m7pkZdTvabucxZixeI7WM5Oxndzc+QJBAPjgV3JdafsSRYJLhwiXU+9oipTGY5oAsVYxwU4wTH9hahFCxLog3Q5xqfmgBPtb6bdzoW19rapc4pxBXCxC4i0CQQDQ+fQ04q+agaThFFU7ZyC2mCnpTJeLpHPUw6wD8i9p9lHQEYns8Fd3WMyy+C13zfSQmS5FbPGCleQtSXBa4ogLAkAYzDGqYYhnzeBDJUdlIb7pQd9dB49xDtScpASAx+s3Xft1kNONQC0GfWjUSI92hCf7cXgKMtWU/gBOVWzbtCZZAkBASKOWoSTjon3Vvyt42oB1qtk5qxXzHuOCz65aiGWNcvg3yS1kdYpybB6L70wNTo2s7XIOaTThtro6NB0b2BOBAkEAmF9/rdipc/7UGpHrbUJPKAZBGwbE1tRoHFbWWXWooBvHqh/z+9ElApUo7ttPUsdCdTGuPHIw8Cy1tFdpfDGiwQ==";
-    
-    //partner和seller获取失败,提示
-    if ([appID length] == 0 || [seller length] == 0 || [privateKey length] == 0) {
+    //partnerID和sellerID获取失败时
+    if ([partnerID length] == 0 || [sellerID length] == 0 || [partnerPrivateKey length] == 0) {
         
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"缺少appId或者seller或者私钥" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            
+        
         }];
         
         [alert addAction:action];
-        
         [self presentViewController:alert animated:YES completion:nil];
-        
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         return;
     }
     
-    /*
-     *生成订单信息及签名
-     */
+    //==========生成订单信息及签名==========
+    
     //将商品信息赋予AlixPayOrder的成员变量
     Order *order = [[Order alloc] init];
-    
-    //app_id设置
-    order.app_id = appID;
-    
-    //支付接口名称
-    order.method = @"alipay.trade.app.pay";
-    
-    //参数编码格式
-    order.charset = @"utf-8";
+    order.app_id = partnerID;//商户ID
+    order.method = @"alipay.trade.app.pay";//支付接口名称
+    order.charset = @"utf-8";//参数编码格式
     
     //当前时间点
     NSDate *date = [[NSDate alloc] init];
@@ -163,20 +156,17 @@
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     order.timestamp = [formatter stringFromDate:date];
     
-    //支付版本
-    order.version = @"1.0";
-    
-    //sign_type设置
-    order.sign_type = @"RSA";
+    order.version = @"1.0";//支付版本
+    order.sign_type = @"RSA";//sign_type设置
     
     //商品数据
     order.biz_content = [[BizContent alloc] init];
-    order.biz_content.body = product.body;
-    order.biz_content.subject = product.subject;
-    order.biz_content.out_trade_no = [self generateTradeNO];
-    order.biz_content.timeout_express = @"30m";
-    order.biz_content.total_amount = [NSString stringWithFormat:@"%.2f",product.price];
-    order.biz_content.seller_id = seller;
+    order.biz_content.seller_id = sellerID;//账户ID
+    order.biz_content.body = product.body;//商品描述
+    order.biz_content.subject = product.subject;//商品标题
+    order.biz_content.out_trade_no = [self generateTradeNO];//订单ID（由商家自行制定）
+    order.biz_content.timeout_express = @"30m";//超时时间设置
+    order.biz_content.total_amount = [NSString stringWithFormat:@"%.2f",product.price];//商品价格
     
     //将商品信息拼接成字符串
     NSString *orderInfo = [order orderInfoEncoded:NO];
@@ -184,17 +174,18 @@
     NSLog(@"orderSpec = %@",orderInfo);
     
     //获取私钥并将商户信息签名，外部商户的加签过程请务必放在服务端，防止公私钥数据泄露；需要遵循RSA签名规范，并将签名字符串base64编码和UrlEncode
-    id<DataSigner> signer = CreateRSADataSigner(privateKey);
+    id<DataSigner> signer = CreateRSADataSigner(partnerPrivateKey);
     NSString *signedString = [signer signString:orderInfo];
     
     //如果加签成功，则继续执行支付
     if (signedString != nil) {
-        //应用注册scheme,在AliSDKDemo-Info.plist定义URL types
+        //应用注册scheme,在AliSDKDemo-Info.plist定义URL types,用于快捷支付成功后重新唤起商户应用
         NSString *appScheme = @"AliPayDemo";
         
         //将签名成功字符串格式化为订单字符串,请严格按照该格式
         NSString *orderString = [NSString stringWithFormat:@"%@&sign=%@",orderInfoEncoded,signedString];
         
+        //调用支付结果开始支付
         [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
             
             NSLog(@"resultDic = %@",resultDic);

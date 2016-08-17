@@ -42,15 +42,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGi-Bi-6wl">
-                                <rect key="frame" x="126" y="520" width="68" height="33"/>
+                                <rect key="frame" x="115" y="520" width="90" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="68" id="DAf-vF-dIO"/>
-                                    <constraint firstAttribute="height" constant="33" id="cQB-Xv-cI3"/>
+                                    <constraint firstAttribute="width" constant="90" id="DAf-vF-dIO"/>
+                                    <constraint firstAttribute="height" constant="35" id="cQB-Xv-cI3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="支付订单">
-                                    <color key="titleColor" red="1" green="0.3482284175" blue="0.18428182970000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="支付订单"/>
                                 <connections>
                                     <action selector="payButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFC-Gg-aQz"/>
                                 </connections>
@@ -73,6 +71,7 @@
                     <navigationItem key="navigationItem" id="PCa-5x-jMd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="payButton" destination="IGi-Bi-6wl" id="Sna-2u-1bK"/>
                         <outlet property="productTableView" destination="x8I-ty-D7R" id="IWp-wm-AD7"/>
                     </connections>
                 </viewController>
