@@ -50,6 +50,11 @@
         //跳转支付宝钱包进行支付，处理支付结果
         [[AlipaySDK defaultService] processAuthResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
+            if (resultDic && [resultDic objectForKey:@"resultStatus"] && ([[resultDic objectForKey:@"resultStatus"] intValue] == 9000)) {
+                //支付成功
+            }else{
+                //支付失败
+            }
         }];
     }
     

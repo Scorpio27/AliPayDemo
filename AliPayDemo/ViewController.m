@@ -189,7 +189,9 @@
         [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
             
             NSLog(@"resultDic = %@",resultDic);
-            if ([[resultDic objectForKey:@"resultStatus"] isEqualToString:@"9000"]) {
+            
+            // 返回结果需要通过 resultStatus 以及 result 字段的值来综合判断并确定支付结果。 在 resultStatus=9000,并且 success="true"以及 sign="xxx"校验通过的情况下,证明支付成功。其它情况归为失败。较低安全级别的场合,也可以只通过检查 resultStatus 以及 success="true"来判定支付结果
+            if (resultDic && [resultDic objectForKey:@"resultStatus"] && ([[resultDic objectForKey:@"resultStatus"] intValue] == 9000)) {
                 //支付成功
             }else{
                 //支付失败
@@ -212,7 +214,7 @@
     [[AlipaySDK defaultService] payOrder:str fromScheme:appScheme callback:^(NSDictionary *resultDic) {
         NSLog(@"resultDic = %@",resultDic);
         if ([[resultDic objectForKey:@"resultStatus"] isEqualToString:@"9000"]) {
-            //支付成功
+            //支付成功            
         }else{
             //支付失败
         }
