@@ -213,10 +213,24 @@
     
     [[AlipaySDK defaultService] payOrder:str fromScheme:appScheme callback:^(NSDictionary *resultDic) {
         NSLog(@"resultDic = %@",resultDic);
-        if ([[resultDic objectForKey:@"resultStatus"] isEqualToString:@"9000"]) {
-            //支付成功            
-        }else{
-            //支付失败
+        
+        if ([resultDic[@"resultStatus"] isEqual:@"9000"]) {
+            //支付成功
+        }
+        else if ([resultDic[@"resultStatus"] isEqual:@"8000"]) {
+            //正在处理中
+        }
+        else if ([resultDic[@"resultStatus"] isEqual:@"4000"]) {
+            //订单支付失败
+        }
+        else if ([resultDic[@"resultStatus"] isEqual:@"6001"]) {
+            //您已中途取消支付
+        }
+        else if ([resultDic[@"resultStatus"] isEqual:@"6002"]) {
+            //您的网络连接出错
+        }
+        else {
+           //支付失败
         }
         
     }];
